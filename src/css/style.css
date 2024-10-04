@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair+Display:wght@400..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #fff;
+  --primary-600: #996830;
+  --primary-300: #C4A386;
+  --primary-100: #E6D8CC;
+  --neutral-900: #2C2C2C;
+  --neutral-700: #444444;
+  --neutral-500: #7C7C7C;
+  --neutral-300: #D9D9D6;
+  --neutral-100: #E5E5E5;
+  --outfit: "Outfit", sans-serif;
+  --playfair: "Playfair Display", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: var(--outfit);
+
+}
+
+h3 {
+  @apply text-6xl font-playfair text-neutral900;
+}
+
+h4 {
+  @apply text-[36px] font-playfair text-neutral900;
+}
+
+.max-container {
+  @apply w-full max-w-[1216px] mx-auto;
+}
+
+.header {
+  @apply flex w-full justify-between items-center lg:py-5;
+}
+
+.btn {
+  @apply flex items-center gap-1 py-3 px-5 text-white bg-primary600 font-semibold uppercase;
+}
+
+#hero {
+  @apply w-full flex flex-col justify-center items-center gap-5;
+}
+
+.creative {
+  background-image: url(../img/hero/hero-image2x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-btn {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cta-btn:hover {
+  animation: rotate 8s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+    transform-origin: center center;
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.awards {
+  @apply flex flex-row justify-center sm:items-start md:items-center py-10 text-neutral300;
+}
+
+.rotate-text {
+  display: inline-block;
+  transform: rotate(-90deg);
+  transform-origin: center center;
+}
+
+.award-item {
+  @apply flex justify-center items-center gap-3;
+}

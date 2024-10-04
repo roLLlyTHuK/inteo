@@ -1,0 +1,23 @@
+{
+  "name": "inteo",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+  "dev": "vite",
+    "build": "vite build --base=/inteo/",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13",
+    "vite": "^5.4.1",
+    "glob": "^8.1.0"
+  },
+  "dependencies": {
+    "vite-plugin-full-reload": "^1.0.5",
+    "vite-plugin-html-inject": "^1.0.1",
+    "countup.js": "^2.8.0"
+  }
+}
