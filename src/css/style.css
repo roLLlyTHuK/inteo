@@ -27,7 +27,7 @@
 body {
   background-color: var(--bg-color);
   font-family: var(--outfit);
-
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -44,10 +44,12 @@ h4 {
 
 a {
   @apply hover:text-primary600 hover:scale-110;
+  transition: all 0.3s ease-in-out;
 }
 
 button {
   @apply inline-flex items-center gap-1 text-white bg-primary600 font-semibold uppercase hover:scale-110;
+  transition: all 0.3s ease-in-out;
 }
 
 .max-container {
