@@ -72,18 +72,21 @@ button {
 }
 
 .cta-btn {
-  left: 50%;
-  transform: translateX(-50%);
+  @apply absolute left-1/2 translate-x-[-50%] lg:left-0 lg:translate-x-0 top-[-60px] w-[120px] h-[120px];
+
 }
 
-.cta-btn:hover {
+.cta-img {
+  width: 100%;
+}
+
+.cta-img:hover {
   animation: rotate 8s linear infinite;
 }
 
 @keyframes rotate {
   from {
     transform: rotate(0deg);
-    transform-origin: center center;
   }
 
   to {
