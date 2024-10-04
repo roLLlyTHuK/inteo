@@ -93,7 +93,7 @@
 
     </section>
     <section id="about">
-      <div class="max-container flex flex-wrap md:flex-nowrap my-[128px]">
+      <div class="max-container flex flex-wrap justify-center lg:flex-nowrap my-[128px]">
         <div class="flex flex-col justify-center items-start gap-6 my-[66px] mr-8 w-[610px]">
           <div class="inline-flex justify-center items-center gap-4 text-primary600">
             <hr class="w-[64px] h-[2px] bg-primary600" />
@@ -109,25 +109,26 @@
             nunc. Faucibus sit odio bibendum lobortis diam.</p>
         </div>
         <div class="relative flex gap-4">
-          <div class="pb-20 pl-2"><img src="./img/about/kitchen.jpg" alt="kitchen" class="w-[280px] h-[480px]"></div>
-          <div class="pt-20 pr-2"><img src="./img/about/bedroom.jpg" alt="bedroom" class="w-[280px] h-[480px]"></div>
+          <div class="pb-20 pl-2"><img src="./img/about/kitchen.jpg" alt="kitchen" class="w-[full]"></div>
+          <div class="pt-20 pr-2"><img src="./img/about/bedroom.jpg" alt="bedroom" class="w-[full]"></div>
           <img src="./img/about/Badge.svg" alt="inteo"
             class="absolute w-[120px] h-[120px] top-0 left-[50%] translate-x-[-50%] translate-y-[-50%] z-50">
         </div>
       </div>
       <div class="max-container">
         <ul class="flex flex-wrap items-center justify-between mb-20">
-          <li class="flex justify-center items-end gap-4">
+          <li
+            class="flex flex-row lg:flex-row md:flex-col justify-center items-end md:items-center lg:items-end  gap-4">
             <h3 class="text-4xl"><span id="count1" class="text-6xl">100</span> &#37;</h3>
             <p class="text-sm uppercase">SATISFITATION <br />
               CLIENTS</p>
           </li>
-          <li class="flex justify-center items-end gap-4">
+          <li class="flex flex-row lg:flex-row md:flex-col justify-center items-end md:items-center lg:items-end gap-4">
             <h3 id="count2">250</h3>
             <p class="text-sm uppercase">EMPLOYEES ON <br />
               WORLDWIDE</p>
           </li>
-          <li class="flex justify-center items-end gap-4">
+          <li class="flex flex-row lg:flex-row md:flex-col justify-center items-end md:items-center lg:items-end gap-4">
             <h3 id="count3">3469</h3>
             <p class="text-sm uppercase">PROJECTS COMPLETED <br />
               ON 60 COUNTRIES</p>
@@ -137,30 +138,34 @@
       </div>
     </section>
     <section id="services">
-      <div class="max-container py-28">
-        <div class="inline-flex justify-center items-center gap-4 text-primary600 mb-6">
-          <hr class="w-[64px] h-[2px] bg-primary600" />
-          <p class="uppercase font-semibold">Our services</p>
+      <div class="max-container flex flex-col justify-center py-28">
+        <div>
+          <div class="inline-flex justify-start items-center gap-4 text-primary600 mb-6">
+            <hr class="w-[64px] h-[2px] bg-primary600" />
+            <p class="uppercase font-semibold">Our services</p>
+          </div>
+          <h2 class="font-playfair text-6xl text-left lg:w-[800px] sm:w-[592px] mb-20">We provide the <span
+              class="italic">best
+              solutions</span>
+            for
+            your dream home</h2>
         </div>
-        <h2 class="font-playfair text-6xl text-left w-[800px] mb-20">We provide the <span class="italic">best
-            solutions</span>
-          for
-          your dream home</h2>
+
         <ul class="flex flex-wrap justify-between items-center gap-8 ">
-          <li class="flex flex-col justify-start items-start p-10 w-[384px] mx-auto border border-primary100">
+          <li class="flex flex-col justify-start items-start p-10 w-full lg:w-[384px] mx-auto border border-primary100">
             <img src="./img/icons/Interior.svg" alt="Architectural & Interior design"
               class="w-[48px] h-[48px] mb-[86px]">
             <h4 class="mb-4">Architectural & Interior design</h4>
             <p>Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.
             </p>
           </li>
-          <li class="flex flex-col justify-start items-start p-10 w-[384px] mx-auto border border-primary100">
+          <li class="flex flex-col justify-start items-start p-10 w-full lg:w-[384px] mx-auto border border-primary100">
             <img src="./img/icons/Building.svg" alt="Building Renovation" class="w-[48px] h-[48px] mb-[86px]">
             <h4 class="mb-4">Building Renovation</h4>
             <p>Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.
             </p>
           </li>
-          <li class="flex flex-col justify-start items-start p-10 w-[384px] mx-auto border border-primary100">
+          <li class="flex flex-col justify-start items-start p-10 w-full lg:w-[384px] mx-auto border border-primary100">
             <img src="./img/icons/Construction.svg" alt="Construciton Management" class="w-[48px] h-[48px] mb-[86px]">
             <h4 class="mb-4">Construciton Management</h4>
             <p>Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.
@@ -170,38 +175,41 @@
       </div>
     </section>
     <section id="works">
-      <div class="max-container flex flex-wrap justify-between items-start gap-8 py-28">
-        <div clas="flex flex-col justify-start items-start">
+      <div class="max-container flex flex-wrap justify-center items-start gap-8 py-28">
+        <div class="flex flex-col justify-center items-center lg:justify-start lg:items-start ">
           <div class="inline-flex justify-center items-center gap-4 text-primary600 mb-6">
             <hr class="w-[64px] h-[2px] bg-primary600" />
             <p class="uppercase font-semibold">Recent works</p>
           </div>
-          <h2 class="font-playfair text-6xl text-left mb-24 w-[592px]">Some of our crafts made with love</h2>
-          <img src="./img/works/Image1.jpg" alt="Villa Furnishing & Interior" class="w-[full] object-contain mb-6">
+          <h2 class="font-playfair text-6xl text-left mb-24 w-full lg:w-[592px]">Some of our crafts made with love</h2>
+          <img src="./img/works/Image1.jpg" alt="Villa Furnishing & Interior" class="w-full object-contain mb-6">
           <h4 class="mb-4">Villa Furnishing & Interior</h4>
-          <p class="mb-24 w-[592px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui
+          <p class="mb-24 w-full lg:w-[592px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
+            fringilla dui
             amet faucibus
             nam. Erat id
             laoreet
             posuere etiam morbi.
           </p>
-          <button class="flex items-center gap-1 py-4 px-12 text-white bg-primary600 font-semibold uppercase">
+          <button class="inline-flex items-center gap-1 py-4 px-12 text-white bg-primary600 font-semibold uppercase">
             <p>Contact us</p>
             <img src="./img/rt-arrow.svg" alt="" class="w-5 h-5">
           </button>
         </div>
         <div class="flex flex-col justify-center px-14">
           <div>
-            <img src="./img/works/Image2.jpg" alt="Luxury Hotel Renovation" class="w-[480px] object-contain mb-4">
+            <img src="./img/works/Image2.jpg" alt="Luxury Hotel Renovation" class="w-full object-contain mb-4">
             <h4 class="mb-4">Luxury Hotel Renovation</h4>
-            <p class="mb-20 w-[480px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui
+            <p class="mb-20 w-full lg:w-[480px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
+              fringilla dui
               amet
               faucibus nam.</p>
           </div>
           <div>
-            <img src="./img/works/Image3.jpg" alt="Residence Swimming Pool" class="w-[480px] object-contain mb-4">
+            <img src="./img/works/Image3.jpg" alt="Residence Swimming Pool" class="w-full object-contain mb-4">
             <h4 class="mb-4">Residence Swimming Pool</h4>
-            <p class="w-[480px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui amet
+            <p class="w-full lg:w-[480px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla
+              dui amet
               faucibus nam.</p>
           </div>
         </div>
@@ -210,13 +218,13 @@
   </main>
   <footer>
     <div class="max-container flex flex-col pt-[88px] pb-20">
-      <div class="flex flex-wrap justify-between mb-40">
+      <div class="flex flex-wrap lg:justify-between justify-center mb-40">
         <div class=" flex-col w-[582px]">
           <h3 class="text-5xl mb-4">Kick-start your dream home with us</h3>
           <h3 class="text-5xl text-primary600 italic">Send us a hi</h3>
 
         </div>
-        <div class="flex flex-col justify-center items-start w-[582px] pl-[320px]">
+        <div class="flex flex-col justify-center items-start w-[582px] lg:pl-[320px]">
           <h5 class="text-2xl font-playfair mb-2">Brooklyn, New York</h5>
           <address class="text-[14px] font-light not-italic mb-8">962 Fifth Avenue Str, 3rd Floor-Trump Building NY
             10006,
